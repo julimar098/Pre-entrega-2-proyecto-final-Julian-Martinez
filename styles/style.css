@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Roboto Mono;
+    src: url(../assets/fonts/RobotoMono-Italic-VariableFont_wght.ttf);
+}
+
+body{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    text-align: center; 
+    background-color: beige;
+    padding: 1.5%;
+    font-family: Roboto Mono;
+}
+
+header nav a{
+    background-color: rgb(200, 233, 109);
+}
+
+/* index */
+.Producto_contenedor{ 
+    background: url(../assets/images/Frascos\ de\ fragancias.webp) no-repeat center;
+    height: 100%;
+}
+
+.lista_producto{
+    display: flex;
+    flex-direction: row;
+    padding-left: 7%;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel_container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    margin: 10%;
+}
+
+.producto_uno{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 2%; 
+    margin: 3%; 
+    text-align: center;
+    border-radius: 4% 4% 4% 4%;
+    box-sizing: border-box;
+}
+
+.producto_dos{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 2%; 
+    margin: 3%; 
+    text-align: center;
+    border-radius: 4% 4% 4% 4%;
+    box-sizing: border-box;
+}
+
+.producto_tres{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 2%; 
+    margin: 3%; 
+    text-align: center;
+    border-radius: 4% 4% 4% 4%;
+    box-sizing: border-box;
+}
+
+.producto_cuatro{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 2%; 
+    margin: 3%; 
+    text-align: center;
+    border-radius: 4% 4% 4% 4%;
+    box-sizing: border-box;
+}
+
+.producto_cinco{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 2%; 
+    margin: 3%; 
+    text-align: center;
+    border-radius: 4% 4% 4% 4%;
+    box-sizing: border-box;
+}
+
+.producto_seis{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 2%;
+    margin: 3%;
+    text-align: center;
+    border-radius: 4% 4% 4% 4%;
+    box-sizing: border-box;
+}
+
+.foto_versace_eros_index{
+    height: 250px;
+    width: 250px;
+}
+
+.foto_212_index{
+    height: 250px;
+    width: 250px;
+}
+
+.foto_saint_laurent_index{
+    height: 250px;
+    width: 250px;
+}
+
+.foto_one_million_index{
+    height: 250px;
+    width: 250px;
+}
+
+.foto_invictus_elixir_index{
+    height: 250px;
+    width: 250px;
+}
+
+.foto_calvin_klein_unisex_index{
+    height: 250px;
+    width: 250px;
+}
+
+.descripcion_main{
+    text-align: center;
+    margin: 200px;
+}
+
+.textos_main{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 20px;
+    display: inline-block;
+    font-family: Roboto Mono;
+}
+
+.main_texto_uno,
+.main_texto_dos{
+    margin: 10px;
+    padding: 10px;
+}
+
+/* productos */
+.lista_productos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 2%;
+}
+
+.productos_perfumes img{
+    height: 350px;
+    width: 350px;
+}
+
+.productos_perfumes{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 2%; 
+    margin: 3%; 
+    text-align: center;
+    border-radius: 4%;
+}
+
+.productos_perfumes:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.productos_perfumes:not(hover){
+    transition: transform 0.3s ease-in-out;
+}
+
+li{
+    display:inline-block
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+/* acerca de nosotros */
+.main_acerca_nosotros{
+    padding: 10%;
+    font-family: Roboto Mono;
+}
+
+.acerca_de_nosotros{
+    text-align: center;
+}
+
+.acerca_nosotros{
+    text-align: center;
+}
+
+.acerca_de_nosotros_texto_uno{
+    display: inline-block;
+    width: 600px;
+    vertical-align: top;
+    position: relative;
+    bottom: -100px;
+}
+
+.foto_acerca_de_nosotros{
+    width: 400px;
+    height: 400px;
+}
+
+.foto_acerca_de_nosotros_dos{
+    width: 400px;
+    height: 400px;
+}
+
+.acerca_nosotros_dos{
+    text-align: center;
+}
+
+.acerca_de_nosotros_texto_dos{
+    display: inline-block;
+    width: 600px;
+    vertical-align: top;
+    position: relative;
+    bottom: -150px;
+}
+
+/* contacto */
+.formulario_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.labels_inputs {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 20px;
+    align-items: center;
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 3%;
+    align-items: start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nombre_apellido{
+    grid-column: 1 / span 2;
+}
+
+.email,
+.mensaje {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.telefono {
+    width: 100%;
+}
+
+.email {
+    grid-column: 1 / span 1; 
+}
+
+.telefono {
+    grid-column: 2 / span 1; 
+}
+
+.mensaje input {
+    display: none;
+}
+
+.mensaje {
+    grid-column: 1 / span 2; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: calc(100% - 40px);
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* preguntas frecuentes */
+.titulo_preguntas_frecuentes{
+    text-align: center;
+}
+
+.main_preguntas_frecuentes{
+    padding: 10px;
+}
+
+.preguntas_respuestas{
+    text-align: center;
+    font-family: Roboto Mono;
+}
+
+.preguntas_respuestas.left_align{
+    background-color: rgba(245, 245, 220, 0.534);
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: center;
+}
+
+.pregunta_uno{
+    padding: 15px;
+}
+
+.respuesta_uno{
+    padding: 15px;
+}
+
+.pregunta_dos{
+    padding: 15px;
+}
+
+.respuesta_dos{
+    padding: 15px;
+}
+
+.pregunta_tres{
+    padding: 15px;
+}
+
+.respuesta_tres{
+    padding: 15px;
+}
+
+/* marcas */
+.lista_de_marcas{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 7%;
+}
+
+.foto_calvin_klein{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 20px;
+    margin: 30px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.foto_carolina_herrera{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 20px;
+    margin: 30px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.foto_channel{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 20px;
+    margin: 30px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.foto_dior{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 20px;
+    margin: 30px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.foto_hugo_boss{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 20px;
+    margin: 30px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.foto_kenzo{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 20px;
+    margin: 30px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.foto_paco_rabanne{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 20px;
+    margin: 30px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.foto_tommy_hilfiger{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 20px;
+    margin: 30px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.foto_versace{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 20px;
+    margin: 30px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.foto_yves_saint_laurent{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 20px;
+    margin: 30px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.foto_gucci{
+    background-color: rgba(245, 245, 220, 0.534);
+    padding: 20px;
+    margin: 30px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+footer{
+    text-align: center;
+    background-color: beige;
+    padding: 20px 0;
+}
+
+.footer{
+    margin-top: auto;
+    padding: 1%;
+}
+
+.redes{
+    display: flex;
+}
+
+/* Media Queries */
+
+@media(min-width:1024px) and (max-width:1440px){
+    .textos_main{
+        justify-content: center;
+    }
+    .lista_productos{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        margin-bottom: 7%;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px){
+    .textos_main{
+        justify-content: center;
+    }
+    .lista_productos{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        margin-bottom: 7%;
+    }
+    .productos_perfumes img{
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media(min-width:480px) and (max-width:768px){
+    .textos_main{
+        justify-content: center;
+    }
+    .lista_productos{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        margin-bottom: 7%;
+    }
+    .productos_perfumes img{
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media(min-width:360px) and (max-width:480px){
+    .textos_main{
+        justify-content: center;
+    }
+    .lista_productos{
+        display: flex;
+        flex-direction: column;
+    }
+    .productos_perfumes img{
+        height: 300px;
+        width: 300px;
+    }
+}
