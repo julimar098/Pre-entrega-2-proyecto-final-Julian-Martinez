@@ -471,6 +471,21 @@ footer{
         grid-template-rows: auto auto auto;
         margin-bottom: 7%;
     }
+    .acerca_nosotros,
+    .acerca_nosotros_dos{
+        display: flex;
+        flex-direction: row;
+    }
+    .acerca_de_nosotros_texto_uno,
+    .acerca_de_nosotros_texto_dos{
+        font-size: 15px;
+    }
+    .foto_acerca_de_nosotros,
+    .foto_acerca_de_nosotros_dos{
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media(min-width:768px) and (max-width:1024px){
@@ -485,6 +500,21 @@ footer{
     .productos_perfumes img{
         height: 250px;
         width: 250px;
+    }
+    .acerca_nosotros,
+    .acerca_nosotros_dos{
+        display: flex;
+        flex-direction: row;
+    }
+    .acerca_de_nosotros_texto_uno,
+    .acerca_de_nosotros_texto_dos{
+        font-size: 14px;
+    }
+    .foto_acerca_de_nosotros,
+    .foto_acerca_de_nosotros_dos{
+        margin: 0 auto;
+        width: 250px;
+        height: 250px;
     }
 }
 
@@ -501,6 +531,21 @@ footer{
         height: 200px;
         width: 200px;
     }
+    .acerca_nosotros,
+    .acerca_nosotros_dos{
+        display: flex;
+        flex-direction: row;
+    }
+    .acerca_de_nosotros_texto_uno,
+    .acerca_de_nosotros_texto_dos{
+        font-size: 14px;
+    }
+    .foto_acerca_de_nosotros,
+    .foto_acerca_de_nosotros_dos{
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media(min-width:360px) and (max-width:480px){
@@ -513,6 +558,22 @@ footer{
     }
     .productos_perfumes img{
         height: 300px;
-        width: 300px;
-    }
+        width: 300px;
+    }
+    .acerca_nosotros,
+    .acerca_nosotros_dos{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .acerca_de_nosotros_texto_uno,
+    .acerca_de_nosotros_texto_dos{
+        font-size: 14px;
+    }
+    .foto_acerca_de_nosotros,
+    .foto_acerca_de_nosotros_dos{
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+    }
 }
