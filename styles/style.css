@@ -463,6 +463,9 @@ footer{
 /* Media Queries */
 
 @media(min-width:1024px) and (max-width:1440px){
+    .descripcion_main{
+        position: static;
+    }
     .textos_main{
         justify-content: center;
     }
@@ -478,17 +481,24 @@ footer{
     }
     .acerca_de_nosotros_texto_uno,
     .acerca_de_nosotros_texto_dos{
+        display: flex;
+        flex-direction: column;
         font-size: 15px;
+        position: static;
     }
     .foto_acerca_de_nosotros,
     .foto_acerca_de_nosotros_dos{
         margin: 0 auto;
         width: 300px;
         height: 300px;
+        position: static;
     }
 }
 
 @media(min-width:768px) and (max-width:1024px){
+    .descripcion_main{
+        position: static;
+    }
     .textos_main{
         justify-content: center;
     }
@@ -508,17 +518,24 @@ footer{
     }
     .acerca_de_nosotros_texto_uno,
     .acerca_de_nosotros_texto_dos{
+        display: flex;
+        flex-direction: column;
         font-size: 14px;
+        position: static;
     }
     .foto_acerca_de_nosotros,
     .foto_acerca_de_nosotros_dos{
         margin: 0 auto;
         width: 250px;
         height: 250px;
+        position: static;
     }
 }
 
 @media(min-width:480px) and (max-width:768px){
+    .descripcion_main{
+        position: static;
+    }
     .textos_main{
         justify-content: center;
     }
@@ -538,17 +555,24 @@ footer{
     }
     .acerca_de_nosotros_texto_uno,
     .acerca_de_nosotros_texto_dos{
+        display: flex;
+        flex-direction: column;
         font-size: 14px;
+        position: static;
     }
     .foto_acerca_de_nosotros,
     .foto_acerca_de_nosotros_dos{
         margin: 0 auto;
         width: 200px;
         height: 200px;
+        position: static;
     }
 }
 
 @media(min-width:360px) and (max-width:480px){
+    .descripcion_main{
+        position: static;
+    }
     .textos_main{
         justify-content: center;
     }
@@ -563,17 +587,21 @@ footer{
     .acerca_nosotros,
     .acerca_nosotros_dos{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
 
     }
     .acerca_de_nosotros_texto_uno,
     .acerca_de_nosotros_texto_dos{
+        display: flex;
+        flex-direction: column;
         font-size: 14px;
+        position: static;
     }
     .foto_acerca_de_nosotros,
     .foto_acerca_de_nosotros_dos{
         margin: 0 auto;
         width: 150px;
         height: 150px;
+        position: static;
     }
 }
